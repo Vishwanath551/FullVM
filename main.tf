@@ -6,6 +6,10 @@ provider   "azurerm"   {
 resource   "azurerm_resource_group"   "rg"   { 
    name   =   "my-first-terraform-rg" 
    location   =   "uksouth" 
+   tags = {
+terra = "day1"
+costcentre = "corp"
+}
  }
 ## Virtual Network and Subnet
 resource   "azurerm_virtual_network"   "myvnet"   { 
